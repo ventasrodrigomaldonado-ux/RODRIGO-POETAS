@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T9H1FLCCH8"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-T9H1FLCCH8');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ubicación Comercial Estratégica | Puerto Vallarta</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Montserrat',sans-serif;
+color:#fff;
+background:
+linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.90)),
+url('ubicacion1.jpg');
+background-size:cover;
+background-position:center center;
+background-repeat:no-repeat;
+background-attachment:fixed;
+overflow-x:hidden;
+}
+
+.header{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:80px 7%;
+background:rgba(0,0,0,.35);
+backdrop-filter:blur(2px);
+border-bottom:1px solid rgba(212,175,55,.35);
+}
+
+.hero-box{
+max-width:1050px;
+margin:auto;
+}
+
+.logo{
+width:170px;
+max-width:70%;
+margin:0 auto 25px;
+display:block;
+}
+
+.badge{
+display:inline-block;
+padding:10px 22px;
+border:1px solid rgba(212,175,55,.55);
+border-radius:40px;
+color:#d4af37;
+font-size:13px;
+letter-spacing:2px;
+text-transform:uppercase;
+background:rgba(0,0,0,.35);
+margin-bottom:24px;
+}
+
+h1{
+font-family:'Playfair Display',serif;
+font-size:68px;
+line-height:1.05;
+color:#d4af37;
+margin-bottom:20px;
+text-align:center;
+}
+
+.sub{
+font-size:20px;
+line-height:1.8;
+color:#eee;
+max-width:900px;
+margin:0 auto 25px;
+text-align:center;
+}
+
+.hero-text{
+font-size:17px;
+line-height:1.9;
+color:#ddd;
+max-width:900px;
+margin:0 auto 28px;
+text-align:center;
+}
+
+.price-box{
+max-width:780px;
+margin:30px auto;
+padding:28px;
+border-radius:28px;
+background:rgba(0,0,0,.58);
+border:1px solid rgba(212,175,55,.35);
+box-shadow:0 20px 60px rgba(0,0,0,.45);
+text-align:center;
+}
+
+.price-box h2{
+font-family:'Playfair Display',serif;
+font-size:36px;
+color:#d4af37;
+margin-bottom:8px;
+}
+
+.price-box p{
+color:#ddd;
+line-height:1.8;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+border-radius:40px;
+background:#d4af37;
+color:#000;
+text-decoration:none;
+font-weight:800;
+margin:8px;
+transition:.3s;
+}
+
+.btn:hover{
+background:#fff;
+transform:translateY(-3px);
+}
+
+.btn-outline{
+background:rgba(0,0,0,.35);
+color:#d4af37;
+border:1px solid rgba(212,175,55,.55);
+}
+
+.section{
+max-width:1180px;
+margin:0 auto 40px;
+padding:75px 7%;
+background:rgba(0,0,0,.55);
+backdrop-filter:blur(10px);
+border:1px solid rgba(212,175,55,.16);
+border-radius:34px;
+box-shadow:0 20px 70px rgba(0,0,0,.35);
+text-align:center;
+}
+
+.section h2{
+font-family:'Playfair Display',serif;
+font-size:46px;
+color:#d4af37;
+margin-bottom:14px;
+text-align:center;
+}
+
+.divider{
+width:90px;
+height:2px;
+background:#d4af37;
+margin:0 auto 35px;
+}
+
+.section-intro{
+max-width:900px;
+margin:0 auto 35px;
+line-height:1.9;
+color:#ddd;
+font-size:17px;
+text-align:center;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:22px;
+}
+
+.card{
+background:rgba(0,0,0,.50);
+border:1px solid rgba(212,175,55,.24);
+border-radius:24px;
+padding:26px;
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+border-color:rgba(212,175,55,.48);
+}
+
+.card h3{
+color:#d4af37;
+font-size:20px;
+margin-bottom:12px;
+}
+
+.card p{
+color:#ddd;
+line-height:1.75;
+font-size:15px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+gap:18px;
+}
+
+.gallery img,
+.main-img{
+width:100%;
+height:270px;
+object-fit:cover;
+border-radius:18px;
+cursor:pointer;
+border:1px solid rgba(212,175,55,.22);
+transition:.35s;
+}
+
+.main-img{
+height:430px;
+margin-bottom:18px;
+}
+
+.gallery img:hover,
+.main-img:hover{
+transform:scale(1.03);
+}
+
+.notice{
+max-width:950px;
+margin:auto;
+padding:38px;
+border-radius:28px;
+background:rgba(212,175,55,.12);
+border:1px solid rgba(212,175,55,.35);
+text-align:center;
+}
+
+.notice p{
+line-height:1.9;
+color:#eee;
+font-size:17px;
+}
+
+footer{
+text-align:center;
+padding:45px 7%;
+background:rgba(0,0,0,.78);
+border-top:1px solid rgba(212,175,55,.35);
+color:#ccc;
+line-height:1.8;
+}
+
+.whatsapp-float{
+position:fixed;
+bottom:22px;
+right:22px;
+background:#25D366;
+color:#fff;
+padding:16px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:800;
+z-index:999;
+box-shadow:0 10px 30px rgba(0,0,0,.45);
+}
+
+.music-btn{
+position:absolute;
+top:25px;
+right:25px;
+background:rgba(0,0,0,.35);
+color:#d4af37;
+border:1px solid rgba(212,175,55,.55);
+padding:10px 18px;
+border-radius:30px;
+cursor:pointer;
+z-index:10;
+}
+
+.modal{
+display:none;
+position:fixed;
+z-index:9999;
+inset:0;
+background:rgba(0,0,0,.94);
+align-items:center;
+justify-content:center;
+padding:30px;
+}
+
+.modal img{
+max-width:95%;
+max-height:90%;
+border-radius:18px;
+}
+
+.modal span{
+position:absolute;
+top:25px;
+right:35px;
+font-size:42px;
+color:#d4af37;
+cursor:pointer;
+}
+
+@media(max-width:850px){
+.header{
+padding:110px 6% 70px;
+}
+
+h1{
+font-size:42px;
+}
+
+.sub{
+font-size:17px;
+}
+
+.section{
+padding:55px 6%;
+border-radius:24px;
+}
+
+.section h2{
+font-size:34px;
+}
+
+.main-img{
+height:260px;
+}
+
+.gallery img{
+height:220px;
+}
+
+.music-btn{
+top:15px;
+right:15px;
+font-size:12px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+
+<button class="music-btn" onclick="activarMusica()">🎧 Música</button>
+
+<div class="hero-box">
+
+<img src="logo.png" class="logo" alt="Torrez & Maldonado">
+
+<div class="badge">Dossier comercial ejecutivo</div>
+
+<h1>Ubicación Comercial Estratégica</h1>
+
+<p class="sub">
+Av. de los Poetas esquina con futura Av. Las Torres · Puerto Vallarta, Jalisco
+</p>
+
+<p class="hero-text">
+Propuesta preparada para evaluación de expansión comercial. Ubicación con alto potencial para <strong>O’Reilly Auto Parts</strong>, sin excluir otros giros estratégicos como AutoZone, farmacias, restaurantes, servicios, tiendas de conveniencia y plaza comercial.
+</p>
+
+<div class="price-box">
+<h2>$10,500 MXN por m²</h2>
+<p>Precio especial vigente hasta el <strong>31 de julio</strong>.</p>
+<p>A partir del <strong>1 de agosto</strong>, el valor proyectado subirá a <strong>$15,000 MXN/m² o más</strong>.</p>
+</div>
+
+<a class="btn" href="https://wa.me/523221340289?text=Hola,%20me%20interesa%20recibir%20informaci%C3%B3n%20sobre%20el%20terreno%20comercial%20Av.%20de%20los%20Poetas." target="_blank">
+Solicitar información
+</a>
+
+<a class="btn btn-outline" href="#estudio-zona">
+Estudio de zona
+</a>
+
+<a class="btn btn-outline" href="https://maps.google.com/?q=20.669599675417977,-105.20712550169658" target="_blank">
+Ver ubicación
+</a>
+
+</div>
+</header>
+
+<section class="section">
+<h2>Resumen Ejecutivo</h2>
+<div class="divider"></div>
+
+<p class="section-intro">
+El punto se ubica sobre una zona en crecimiento, con futura conexión vial entre Av. Las Torres y Av. de los Poetas, proyectando mayor flujo vehicular, visibilidad comercial y posicionamiento estratégico para cadenas nacionales.
+</p>
+
+<div class="grid">
+
+<div class="card">
+<h3>Terreno 1</h3>
+<p><strong>35 × 60 m</strong></p>
+<p>Superficie aproximada: <strong>2,100 m²</strong></p>
+</div>
+
+<div class="card">
+<h3>Terreno 2</h3>
+<p><strong>80 × 80 m</strong></p>
+<p>Superficie aproximada: <strong>6,400 m²</strong></p>
+</div>
+
+<div class="card">
+<h3>Cruce Estratégico</h3>
+<p>Av. de los Poetas con futura Av. Las Torres.</p>
+<p>Alto potencial de flujo, exposición y doble acceso.</p>
+</div>
+
+<div class="card">
+<h3>Vocación Comercial</h3>
+<p>Autopartes, refaccionarias, farmacias, restaurantes, plaza comercial y servicios de alto flujo.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<h2>Enfoque para O’Reilly Auto Parts</h2>
+<div class="divider"></div>
+
+<div class="grid">
+
+<div class="card">
+<h3>🚗 Mercado Natural</h3>
+<p>Zona con movilidad, crecimiento habitacional y demanda para autopartes, mantenimiento vehicular y servicios complementarios.</p>
+</div>
+
+<div class="card">
+<h3>📍 Visibilidad</h3>
+<p>Ubicación de esquina con proyección de alto tránsito vehicular y fácil identificación para clientes de paso.</p>
+</div>
+
+<div class="card">
+<h3>📈 Expansión Temprana</h3>
+<p>Oportunidad de posicionarse antes de que el corredor comercial se consolide y el precio incremente.</p>
+</div>
+
+<div class="card">
+<h3>🏪 Flexibilidad</h3>
+<p>Superficies adecuadas para tienda de autopartes, estacionamiento, accesos, bodega y posible desarrollo complementario.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<h2>Visuales del Terreno</h2>
+<div class="divider"></div>
+
+<img src="ubicacion1.jpg" class="main-img zoomable" alt="Terreno Av. de los Poetas">
+
+<div class="gallery">
+<img src="fachada1.jpg" class="zoomable" alt="Render comercial">
+<img src="fachada2.jpg" class="zoomable" alt="Render comercial">
+<img src="mapa-premium.jpg" class="zoomable" alt="Mapa premium">
+</div>
+</section>
+
+<section class="section" id="estudio-zona">
+<h2>Estudio de Zona</h2>
+<div class="divider"></div>
+
+<p class="section-intro">
+La zona presenta crecimiento habitacional, expansión vial y consolidación comercial. La futura conexión entre Av. Las Torres y Av. de los Poetas refuerza el potencial de flujo vehicular, accesibilidad y plusvalía comercial del punto.
+</p>
+
+<div class="grid">
+
+<div class="card">
+<h3>🚗 Flujo Vehicular</h3>
+<p>La conexión vial proyectada puede fortalecer la circulación entre Puerto Vallarta y Bahía de Banderas.</p>
+</div>
+
+<div class="card">
+<h3>🏥 Entorno de Servicios</h3>
+<p>Hospital Regional, IMSS 179, escuelas, comercios, servicios y zonas habitacionales cercanas.</p>
+</div>
+
+<div class="card">
+<h3>💰 Ventana de Precio</h3>
+<p>Precio actual por debajo del valor proyectado a partir del 1 de agosto.</p>
+</div>
+
+<div class="card">
+<h3>📊 Plusvalía</h3>
+<p>Alta proyección por desarrollo urbano, crecimiento comercial y consolidación del corredor.</p>
+</div>
+
+</div>
+
+<a class="btn" href="https://maps.google.com/?q=20.669599675417977,-105.20712550169658" target="_blank">
+Ver zona en Google Maps
+</a>
+</section>
+
+<section class="section">
+<h2>También ideal para</h2>
+<div class="divider"></div>
+
+<div class="grid">
+<div class="card"><h3>O’Reilly Auto Parts</h3><p>Autopartes, refacciones y servicios complementarios.</p></div>
+<div class="card"><h3>AutoZone</h3><p>Giro automotriz con alta compatibilidad comercial.</p></div>
+<div class="card"><h3>Farmacias</h3><p>Farmacias Guadalajara, Del Ahorro u otros servicios de conveniencia.</p></div>
+<div class="card"><h3>Waldos / Retail</h3><p>Retail de alto flujo y consumo cotidiano.</p></div>
+<div class="card"><h3>Restaurantes</h3><p>Comida rápida, cafeterías o puntos de venta con estacionamiento.</p></div>
+<div class="card"><h3>Plaza comercial</h3><p>Proyecto mixto de locales, servicios y comercio complementario.</p></div>
+</div>
+</section>
+
+<section class="section">
+<div class="notice">
+
+<h2>Oportunidad antes del ajuste de precio</h2>
+
+<p>
+El precio actual representa una ventana comercial de entrada anticipada. A partir del <strong>1 de agosto</strong>, el valor proyectado será de <strong>$15,000 MXN/m² o más</strong>.
+</p>
+
+<a class="btn" href="https://wa.me/523221340289?text=Hola,%20me%20interesa%20agendar%20una%20revisi%C3%B3n%20del%20terreno%20comercial%20Av.%20de%20los%20Poetas." target="_blank">
+Agendar revisión
+</a>
+
+</div>
+</section>
+
+<footer>
+<p><strong>Torrez & Maldonado Real Estate Solutions</strong></p>
+<p>Gestión y localización de propiedades comerciales estratégicas</p>
+<p>Rodrigo Maldonado · +52 322 134 0289</p>
+<p>ventas.rodrigomaldonado@gmail.com</p>
+</footer>
+
+<a href="https://wa.me/523221340289?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20terreno%20comercial%20Av.%20de%20los%20Poetas." class="whatsapp-float" target="_blank">
+💬
+</a>
+
+<audio id="musica" loop>
+<source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<div class="modal" id="imgModal">
+<span onclick="cerrarModal()">×</span>
+<img id="modalImg">
+</div>
+
+<script>
+function activarMusica(){
+const audio = document.getElementById("musica");
+audio.play();
+}
+
+const modal = document.getElementById("imgModal");
+const modalImg = document.getElementById("modalImg");
+
+document.querySelectorAll(".zoomable").forEach(img=>{
+img.addEventListener("click",()=>{
+modal.style.display="flex";
+modalImg.src=img.src;
+});
+});
+
+function cerrarModal(){
+modal.style.display="none";
+}
+
+modal.addEventListener("click",e=>{
+if(e.target === modal){
+cerrarModal();
+}
+});
+</script>
+
+</body>
+</html>
